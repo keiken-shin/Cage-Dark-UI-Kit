@@ -1,0 +1,28 @@
+//Buttons design
+
+.btn{
+    background: none;
+    outline: none;
+    padding: .4rem 3rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    font-weight: $font-400;
+    font-size: $btn-font;
+    text-decoration: none;
+}
+
+//Alternative buttons
+@each $color, $value in $theme-colors{
+    .btn-#{$color} {
+      @include button-border($value);
+    }
+}
+
+//Gradient Alt
+@each $color, $value in $theme-colors{
+    .btn-g-#{$color}{
+        @include button-g-border($value);
+    }
+}

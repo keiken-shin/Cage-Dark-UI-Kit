@@ -1,0 +1,24 @@
+//Breakpoint Map
+
+// $breakpoints: (
+//     'small' : 20rem,    //320px
+//     'med'   : 40rem,    //640px
+//     'large' : 57.5rem,  //920px
+//     'wide'  : 75rem,    //1200px
+//     'mega'  : 87.5rem   //1400px
+// )!default;
+
+$breakpoints: (
+  'small' : 33.75rem,   //540px
+  'med'   : 47.5rem,    //760px
+  'large' : 62rem,      //992px
+  'wide'  : 75rem      //1200px
+) !default;
+
+//Vendor Prefix Map
+$prefixes: (
+  'webkit',
+  'moz',
+  'ms',
+  'o'
+) !default;

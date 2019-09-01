@@ -1,0 +1,58 @@
+//Color Schemes
+
+$white:         #ffffff !default;  //default prop is specific to sass which means giving default value to a variable
+$gray-1:        #dbdbdb !default;
+$gray-2:        #c2c2c2 !default;
+$gray-3:        #a5a5a5 !default;
+$gray-4:        #6d6d6d !default;
+$gray-5:        #363636 !default;
+$black:         #000000 !default;
+
+$theme-bg:         #161616 !default;
+
+
+$blue:          #1a7ae0 !default;
+$fade-blue:     #7078a7 !default;
+$purple:        #b66ddb !default;
+$pink:          #e45095 !default;
+$red:           #e25252 !default;
+$orange:        #ff8c2d !default;
+$yellow:        #fafa74 !default;
+$green:         #82Cf6d !default;
+$paraket:       #27c596 !default;
+$turqoise:      #1a9aad !default;
+
+$colors: () !default;
+$colors: map-merge((
+    "blue":         $blue,
+    "fade-blue":    $fade-blue,
+    "purple":       $purple,
+    "pink":         $pink,
+    "red":          $red,
+    "orange":       $orange,
+    "green":        $green,
+    "paraket":      $paraket,
+    "turqoise":     $turqoise
+), $colors);
+
+//Theme based color
+$primary:       $fade-blue !default;
+$secondary:     $paraket !default;
+$success:       $green !default;
+$waiting:       $yellow !default;
+$info:          $paraket !default;
+$peace:         $purple !default;
+$light:         $gray-1 !default;
+$dark:          $gray-5 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    "primary":      $primary,
+    "secondary":    $secondary,
+    "success":      $success,
+    "waiting":      $waiting,
+    "info":         $info,
+    "peace":        $peace,
+    "light":        $light,
+    "dark":         $dark
+) , $theme-colors );

@@ -1,0 +1,53 @@
+// CARDS STYLING
+
+.card{
+    background: transparent;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    width: 18rem;
+}
+
+@each $color, $value in $theme-colors{
+    .#{$color}-card {
+      @include cards-design($value);
+    }
+}
+
+.card-img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 10rem;
+}
+
+.card-head{
+    font-size: $font-h5;
+    font-weight: $font-600;
+    margin: 0 ;
+    padding: 0;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+hr.cr-hr{
+    float: left;
+    width: 50%;
+    clear: both;
+}
+
+.card-data{
+    font-size: $card-font;
+    padding: .3rem 1rem;
+    margin-bottom: 5rem;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+

@@ -1,0 +1,51 @@
+// Checkbox Design
+
+.checkbox + .check-list {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + .check-list:before {
+    content: "\2714";
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.7em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+.checkbox + .check-list:active:before {
+    transform: scale(0);
+}
+  
+  
+.checkbox:disabled + .check-list:before {
+    transform: scale(1);
+    border-color: $gray-4;
+}
+  
+.checkbox:checked:disabled + .check-list:before {
+    transform: scale(1);
+    background-color: $gray-4;
+    border-color: $gray-4;
+}
+
+
+
+
+@each $color, $value in $theme-colors{
+    .#{$color}-checkbox {
+      @include checkbox-color($value);
+    }
+}

@@ -1,0 +1,76 @@
+//Content- Accordion
+
+.accordion{
+    max-width: 57.5rem;
+    position: relative;
+    font-size: 1rem;
+
+    .accordion-content{
+        margin-bottom: .3rem;
+
+        input[type="checkbox"].accord{
+            position: absolute;
+            right: 10px;
+            margin-top: 24px;
+            display: none;
+        }
+
+        label{
+            background: transparent;
+            display: block;
+            padding: 20px 0;
+            text-indent: 25px;
+            font-weight: 600;
+            color: $gray-1;
+            border: 1px solid $gray-1;
+        }
+
+        #acc-first{
+            border-radius: 5px 5px 0 0 ;
+        }
+        
+        #acc-last{
+            border-radius: 0 0 5px 5px;
+        }
+
+        label::before{
+            content: '\f107';
+            display: block;
+            position: absolute;
+            right: 10px;
+            font-family: 'Font Awesome\ 5 Free';
+            font-size: 1rem;
+        }
+
+        section{
+            background: #181818;
+            padding: 0px 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+            line-height: 2rem;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+        }
+
+        input:checked ~ section{
+            height: auto;
+            padding: 20px 30px;
+            -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+        }
+
+        input:checked ~ label::before{
+            content: '\f106';
+        }
+
+        input:checked ~ label[for="question-3"]{
+            border-radius: 0;
+        }
+
+    }
+    
+}
+
+// Content Accordion End
+

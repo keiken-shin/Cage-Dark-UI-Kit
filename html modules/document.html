@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/cage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <title>Cage | Documentation</title>
+</head>
+<body>
+    <section id="container-3">
+
+        <header class="navbar">
+            <div class="logo">
+               <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+            </div>
+
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="../intro.html">Intro</a> </li>
+                    <li class="nav-item"> <a href="#">Documentation</a> </li>
+                    <li class="nav-item"> <a href="#">Extras</a> </li>
+                    <li class="nav-item"> <a href="https://drive.google.com/uc?authuser=0&id=1ewaZKPFntJNOwLHxwUyZlX_GzEEqn6cu&export=download" class="btn btn-primary">Get Cage</a> </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="content docs">
+
+            <div class="title">
+                    <h1>All element designs and usage...</h1>
+            </div>
+
+            <section class="elements">
+                    <ul class="list">
+                        <!-- First One -->
+                        <li>
+                            <h4 class="heading" id="slate"> <blockquote>Slate.scss</blockquote> </h4>
+                            <div class="desc">
+                                <p>
+                                -> It resets the browser's default styling to the cage's default styling.
+                                </p>
+                            </div>
+
+                            <div class="eg">
+                                
+                                <!-- Example 1 -->
+                                <h5 class="code-head">Headings</h5>
+
+                                <div class="eg-pre eg-1">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;h1>Heading 1&lt;/h1>
+  &lt;h2>Heading 2&lt;/h2>
+  &lt;h3>Heading 3&lt;/h3>
+  &lt;h4>Heading 4&lt;/h4>
+  &lt;h5>Heading 5&lt;/h5>
+  &lt;h6>Heading 6&lt;/h6>
+    </code>
+</pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend>
+                                    <h1>Heading 1</h1>
+                                    <h2>Heading 2</h2>
+                                    <h3>Heading 3</h3>
+                                    <h4>Heading 4</h4>
+                                    <h5>Heading 5</h5>
+                                    <h6>Heading 6</h6>
+                                </fieldset>
+                            </div>
+
+                                <!-- Example 2 -->
+                                <h5 class="code-head">Anchor & Paragraph</h5>
+
+                                <div class="eg-pre eg-2">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;a>anchor&lt;/a>
+  &lt;p>padding&lt;/p>
+    </code>
+</pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend>
+                                    <a href="@">anchor</a>
+                                    <p>paragraph</p>
+                                </fieldset>
+                            </div>
+
+                                <!-- Example 3 -->
+                                <h5 class="code-head">Image</h5>
+
+                                <div class="eg-pre eg-3">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;img src="../images/1.jpg">&lt;/img>
+    </code>
+</pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend>
+                                    <img src="../images/1.jpg" alt="img">
+                                </fieldset>
+                            </div>
+
+                                <!-- Example 4 -->
+                                <h5 class="code-head">Lists</h5>
+
+                                <div class="eg-pre eg-4">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;ul>
+    &lt;li>Unordered List&lt;li>
+    &lt;li>one item&lt;li>
+    &lt;li>new item&lt;li>
+  &lt;/ul>
+
+  &lt;ol>
+    &lt;li>Ordered List&lt;li>
+    &lt;li>first List&lt;li>
+    &lt;li>second List&lt;li>        
+  &lt;/ol>
+    </code>
+</pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend><br>
+                                    <ul>
+                                        <li>Unordered List</li>
+                                        <li>one item</li>
+                                        <li>new item</li>
+                                    </ul><br>
+                                    <ol>
+                                        <li>Ordered List</li>
+                                        <li>one item</li>
+                                        <li>new item</li>
+                                    </ol>
+                                </fieldset>
+                            </div>
+
+                                <!-- Example 5 -->
+                                <h5 class="code-head">Buttons & Inputs</h5>
+
+                                <div class="eg-pre eg-5">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;button>Button&lt;/button> &lt;br>
+  Input tags
+  &lt;input type="reset" value="Reset">
+  &lt;input type="submit" value="Submit">
+
+  &lt;input type="checkbox" name="c1" id="">
+  &lt;input type="radio" name="r1" id="">
+
+  &lt;input type="number" name="1" id="">
+  &lt;input type="search" name="" id="">
+
+  &lt;textarea name="" id="" cols="30" rows="2">&lt;/textarea>       
+    </code>
+</pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend><br>
+                                    <button>Button</button><br>
+                                    <br><strong> Input tags </strong><br>
+                                    <input type="reset" value="Reset"><br>
+                                    <input type="submit" value="Submit"><br>
+                                
+                                    <input type="checkbox" name="c1" id="">Checkbox<br>
+                                    <input type="radio" name="r1" id="">Radio<br>
+                                
+                                    <input type="number" name="1" id=""><br>
+                                    <input type="search" name="" id=""><br>
+
+                                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                                </fieldset>
+                            </div>
+
+                            <!-- Example 6 -->
+                            <h5 class="code-head">Other Elements</h5>
+
+                                <div class="eg-pre eg-3">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;mark>Mark&lt;/mark>
+  &lt;small>Small&lt;/small>
+  &lt;sub>Sub&lt;/sub>
+  &lt;sup>Sup&lt;/sup>
+  &lt;fieldset>
+    &lt;legend>Legend&lt;/legend>
+    Fieldset
+  &lt;/fieldset>
+    </code>
+  </pre>
+                                </div>
+                                <fieldset class="result">
+                                    <legend>Result</legend>
+                                    <mark>Mark</mark><br>
+                                    <small>Small</small><br>
+                                    <sub>Sub</sub><br>
+                                    <sup>Sup</sup><br>
+                                    <fieldset>
+                                        <legend>Legend</legend>
+                                        Fieldset
+                                    </fieldset>
+                                </fieldset>
+                            </div>
+
+                            </div>
+                        </li>
+
+
+                        <!-- Next One -->
+                        <li class="mt-3">
+                            <h4 class="heading" id="component"> <blockquote>Components</blockquote> </h4>
+                            <div class="desc">
+                                <p>
+                                -> All the theme designs for the elements.
+                                </p>
+                            </div>
+
+                            
+                            <div class="eg">
+                                
+                                    <!-- Component 1 -->
+                                    <h5 class="code-head">Buttons</h5>
+    
+                                    <div class="eg-pre comp-1">
+                                        <div class="code-area">
+    <pre>
+        <code>
+  &lt;button class="btn btn-primary">Primary Button&lt;/button>
+  &lt;button class="btn btn-secondary">Secondary Button&lt;/button>
+  &lt;button class="btn btn-success">Success Button&lt;/button>
+  &lt;button class="btn btn-waiting">Waiting Button&lt;/button>
+  &lt;button class="btn btn-info">Informative Button&lt;/button>
+  &lt;button class="btn btn-peace">Peace Button&lt;/button>
+  &lt;button class="btn btn-light">Light Button&lt;/button>
+  &lt;button class="btn btn-dark">Dark Button&lt;/button>
+        </code>
+    </pre>
+                                        </div>
+                                        <fieldset class="result">
+                                            <legend>Result</legend>
+                                            <button class="btn btn-primary">Primary Button</button>
+                                            <button class="btn btn-secondary">Secondary Button</button><br><br>
+                                            <button class="btn btn-success">Success Button</button>
+                                            <button class="btn btn-waiting">Waiting Button</button><br><br>
+                                            <button class="btn btn-info">Informative Button</button>
+                                            <button class="btn btn-peace">Peace Button</button><br><br>
+                                            <button class="btn btn-light">Light Button</button>
+                                            <button class="btn btn-dark">Dark Button</button>
+                                        </fieldset>
+                                    </div>
+
+                                <!-- Component 2 -->
+                                <h5 class="code-head">Alerts</h5>
+
+                                <div class="eg-pre comp-2">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;div class="mt-3 alert primary-alert" role="alert">
+    Responsive Primary Alert
+  &lt;/div>
+
+  &lt;div class="mt-3 alert secondary-alert" role="alert">
+    Responsive Secondary Alert with a <a href="void:javascript(0)" class="alert-link">Clickable Link</a>
+  &lt;/div>
+  &lt;div class="mt-3 alert success-alert" role="alert">
+    &lt;strong>It's a Success Closeable Alert!&lt;/strong>
+    &lt;button type="button" class="close" aria-label="Close">
+        &lt;span aria-hidden="true">&times;&lt;/span>
+    &lt;/button>
+  &lt;/div>
+    </code>
+</pre>
+                                    </div>
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <div class="mt-3 alert primary-alert" role="alert">
+                                            Responsive Primary Alert
+                                        </div>
+                                    
+                                        <div class="mt-3 alert secondary-alert" role="alert">
+                                            Responsive Secondary Alert with a <a href="void:javascript(0)" class="alert-link">Clickable Link</a>
+                                        </div>
+                                        <div class="mt-3 alert success-alert" role="alert">
+                                            <strong>It's a Success Closeable Alert!</strong>
+                                            <button type="button" class="close" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- Component 3 -->
+                                <h5 class="code-head">Cards</h5>
+
+                                <div class="eg-pre comp-3">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;!-- Card 1 with image -->
+  &lt;div class="mt-3 card primary-card">
+  &lt;div>
+    &lt;img class="card-img" src="../images/LineArt.png" alt="img">
+  &lt;/div>
+  &lt;div>
+    &lt;h5 class="card-head">Basic Card&lt;/h5>
+    &lt;hr class="cr-hr">
+  &lt;/div>
+  &lt;div>
+    &lt;p class="card-data">
+    Lorem Ipsum is simply dummy 
+    text of the printing and typesetting industry. Lorem Ipsum
+    &lt;/p>
+  &lt;/div>
+  &lt;a class="card-btn btn btn-primary" href="javascript:void(0)">
+    Button
+  &lt;/a>
+  &lt;/div>
+
+  &lt;div class="mt-3 card secondary-card">
+
+  &lt;!-- Card 2 without image -->  
+  &lt;div>
+    &lt;h5 class="card-head">Basic Card&lt;/h5>
+    &lt;hr class="cr-hr">
+  &lt;/div>
+  &lt;div>
+    &lt;p class="card-data">
+    Lorem Ipsum is simply dummy text 
+    of the printing and typesetting industry. Lorem Ipsum
+    &lt;/p>
+  &lt;/div>
+  &lt;a class="card-btn btn btn-secondary" href="javascript:void(0)">
+    Button
+  &lt;/a>
+  &lt;/div>
+    </code>
+</pre>
+                                    </div>
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <div class="mt-3 card primary-card">
+                                            <div>
+                                                <img class="card-img" src="../images/LineArt.png" alt="img">
+                                            </div>
+                                            <div>
+                                                <h5 class="card-head">Basic Card</h5>
+                                                <hr class="cr-hr">
+                                            </div>
+                                            <div>
+                                                <p class="card-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                            </div>
+                                            <a class="card-btn btn btn-primary" href="javascript:void(0)">Button</a>
+                                        </div>
+                                    
+                                        <div class="mt-3 card secondary-card">
+                                            
+                                            <div>
+                                                <h5 class="card-head">Basic Card</h5>
+                                                <hr class="cr-hr">
+                                            </div>
+                                            <div>
+                                                <p class="card-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                            </div>
+                                            <a class="card-btn btn btn-secondary" href="javascript:void(0)">Button</a>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- Component 4 -->
+                                <h5 class="code-head">Accordion</h5>
+
+                                <div class="eg-pre comp-4">
+                                    <div class="code-area">
+<pre>
+    <code>
+  &lt;div class="accordion mt-3">
+   &lt;div class="accordion-content">
+   &lt;input type="checkbox" name="que" class="accord" id="question-1">
+   &lt;label for="question-1" id="acc-first">1. Question&lt;/label>
+   &lt;section class="collapse">
+   &lt;p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Alias, nobis maxime, nesciunt provident dignissimos omnis 
+    voluptate ratione, 
+   &lt;/p>    
+   &lt;/section>
+  &lt;/div>
+    </code>
+</pre>
+                                    </div>
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <div class="accordion mt-3">
+
+                                                <div class="accordion-content">
+                                                    <input type="checkbox" name="que" class="accord" id="question-1">
+                                                    <label for="question-1" id="acc-first">1. Question</label>
+                                                    <section class="collapse">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                                                        </p>    
+                                                    </section>
+                                                </div>
+                                        
+                                                <div class="accordion-content">
+                                                    <input type="checkbox" name="que" class="accord" id="question-2">
+                                                    <label for="question-2">2. Question</label>
+                                                    <section class="acc-collapse">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                                                        </p>
+                                                    </section>
+                                                </div>
+                                        
+                                                <div class="accordion-content">
+                                                    <input type="checkbox" name="que" class="accord" id="question-3">
+                                                    <label for="question-3" id="acc-last">3. Question</label>
+                                                    <section class="collapse">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                                                        </p>
+                                                    </section>
+                                                </div>
+                                        
+                                            </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- Component 5 -->
+                                <h5 class="code-head">Dropdown</h5>
+
+                                <div class="eg-pre comp-5">
+                                    <div class="code-area">
+<pre>
+    <code>
+&lt;form class="dropdown mt-3">
+
+&lt;ul class="select">
+&lt;li>
+&lt;input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value="">
+&lt;span class="select_label select_label-placeholder">Go Choose!&lt;/span>
+&lt;/li>
+
+&lt;li class="select_items">
+&lt;input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener">
+&lt;label class="select_closeLabel" for="awesomeness-close">&lt;/label>
+
+&lt;ul class="select_options">
+&lt;li class="select_option">
+&lt;input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous">
+&lt;label class="select_label" for="awesomeness-ridiculous">First one&lt;/label>
+&lt;/li>
+
+&lt;li class="select_option">
+&lt;input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable">
+&lt;label class="select_label" for="awesomeness-reasonable">Next one&lt;/label>
+&lt;/li>
+
+&lt;li class="select_option">
+&lt;input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking">
+&lt;label class="select_label" for="awesomeness-lacking">Another one&lt;/label>
+&lt;/li>
+
+&lt;li class="select_option">
+&lt;input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless">
+&lt;label class="select_label" for="awesomeness-awesomeless">One more&lt;/label>
+&lt;/li>
+&lt;/ul>
+
+&lt;label class="select_expandLabel" for="awesomeness-opener">&lt;/label>
+&lt;/li>
+&lt;/ul>
+
+&lt;/form>        
+    </code>
+</pre>
+                                    </div>
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <form class="dropdown mt-3">
+
+                                            <ul class="select">
+                                                <li>
+                                                    <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value="">
+                                                    <span class="select_label select_label-placeholder">Go Choose!</span>
+                                                </li>
+                                        
+                                                <li class="select_items">
+                                                    <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener">
+                                                    <label class="select_closeLabel" for="awesomeness-close"></label>
+                                        
+                                                    <ul class="select_options">
+                                                        <li class="select_option">
+                                                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous">
+                                                            <label class="select_label" for="awesomeness-ridiculous">First one</label>
+                                                        </li>
+                                        
+                                                        <li class="select_option">
+                                                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable">
+                                                            <label class="select_label" for="awesomeness-reasonable">Next one</label>
+                                                        </li>
+                                        
+                                                        <li class="select_option">
+                                                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking">
+                                                            <label class="select_label" for="awesomeness-lacking">Another one</label>
+                                                        </li>
+                                        
+                                                        <li class="select_option">
+                                                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless">
+                                                            <label class="select_label" for="awesomeness-awesomeless">One more</label>
+                                                        </li>
+                                                    </ul>
+                                        
+                                                    <label class="select_expandLabel" for="awesomeness-opener"></label>
+                                                </li>
+                                            </ul>
+                                        
+                                        </form>
+                                    </fieldset>
+                                </div>
+
+                                <!-- Component 6 -->
+                                <h5 class="code-head">Checkboxes</h5>
+    
+                                <div class="eg-pre comp-6">
+                                    <div class="code-area">
+<pre>
+    <code>
+&lt;form>
+  &lt;input type="checkbox" id="fruit1" name="fruit" value="Apple" checked class="checkbox primary-checkbox">
+  &lt;label for="fruit1" class="check-list">Apple&lt;/label>
+  &lt;input type="checkbox" id="fruit2" name="fruit" value="Banana" class="checkbox secondary-checkbox">
+  &lt;label for="fruit2" class="check-list">Banana&lt;/label>
+  &lt;input type="checkbox" id="fruit3" name="fruit" value="Cherry" disabled class="checkbox success-checkbox">
+  &lt;label for="fruit3" class="check-list">Cherry&lt;/label>
+  &lt;input type="checkbox" id="fruit4" name="fruit" value="Strawberry" class="checkbox peace-checkbox">
+  &lt;label for="fruit4" class="check-list">Strawberry&lt;/label>
+&lt;/form>
+    </code>
+</pre>
+                                    </div>
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <form>
+                                            <input type="checkbox" id="fruit1" name="fruit-1" value="Apple" checked disabled class="checkbox primary-checkbox">
+                                            <label for="fruit1" class="check-list">Apple</label>
+                                            <input type="checkbox" id="fruit2" name="fruit-2" value="Banana" class="checkbox secondary-checkbox">
+                                            <label for="fruit2" class="check-list">Banana</label>
+                                            <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry" class="checkbox success-checkbox">
+                                            <label for="fruit3" class="check-list">Cherry</label>
+                                            <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry" class="checkbox peace-checkbox">
+                                            <label for="fruit4" class="check-list">Strawberry</label>
+                                        </form>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Another One -->
+                        <li class="mt-3">
+                            <h4 class="heading" id="layout"> <blockquote>Table Grid & CSS-Grid</blockquote> </h4>
+                            <div class="desc">
+                                <p>
+                                -> Different sorts of grid layout.
+                                </p>
+                            </div>
+
+                            <div class="eg">
+                                
+                                <!-- Table Grid -->
+                                <h5 class="code-head">Table Grid</h5>
+
+                                <div class="eg-pre table-grid">
+                                    <!-- <div class="code-area">
+<pre>
+    <code>
+
+    </code>
+</pre>
+                                    </div> -->
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <div class="grid">
+                                            <div class="row">
+                                    
+                                                <div class="col-wd-12">
+                                                    <div class="col">12 Columns</div>
+                                                </div>
+                                    
+                                                <div class="col-wd-6">
+                                                    <div class="col">6 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6">
+                                                    <div class="col">6 Columns</div>
+                                                </div>
+                                    
+                                                <div class="col-wd-6 col-md-4">
+                                                    <div class="col">4 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4">
+                                                    <div class="col">4 Columns</div>
+                                                </div>
+                                                <div class="col-wd-12 col-md-4">
+                                                    <div class="col">4 Columns</div>
+                                                </div>
+                                    
+                                                <div class="col-wd-6 col-md-3">
+                                                    <div class="col">3 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-3">
+                                                    <div class="col">3 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-3">
+                                                    <div class="col">3 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-3">
+                                                    <div class="col">3 Columns</div>
+                                                </div>
+                                    
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                                <div class="col-wd-6 col-md-4 col-sm-2">
+                                                    <div class="col">2 Columns</div>
+                                                </div>
+                                    
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                                <div class="col-wd-3 col-md-2 col-sm-1">
+                                                    <div class="col">1</div>
+                                                </div>
+                                    
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- CSS-Grid -->
+                                <h5 class="code-head">CSS-Grid Layout-1</h5>
+
+                                <div class="eg-pre layout-1">
+                                    <!-- <div class="code-area">
+<pre>
+    <code>
+
+    </code>
+</pre>
+                                    </div> -->
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <input type="checkbox">
+
+                                        <div id="content-1">
+
+                                        <div id="grid">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+
+                                        <header class="cg-1-head">Header</header>
+                                        <main class="cg-1-main">Main</main>
+                                        <section class="cg-1-sect">Section</section>
+                                        <aside class="cg-1-aside">Aside</aside>
+                                        <nav class="cg-1-nav">Nav</nav>
+                                        <footer class="cg-1-foot">Footer</footer>
+
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- CSS-Grid -->
+                                <h5 class="code-head">CSS-Grid Layout-2</h5>
+
+                                <div class="eg-pre layout-2">
+                                    <!-- <div class="code-area">
+<pre>
+    <code>
+
+    </code>
+</pre>
+                                    </div> -->
+                                    <fieldset class="result">
+                                        <legend>Result</legend>
+                                        <!-- Layout 2 -->
+                                        <section class="mt-5">
+
+                                            <div id="content-2">
+                                                <div class="cg-2-one">1</div>
+                                                <div class="cg-2-two">2</div>
+                                                <div class="cg-2-three">3</div>
+                                                <div class="cg-2-four">4</div>
+                                                <div class="cg-2-five">5</div>
+                                            </div>
+                                    
+                                        </section>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        <li>
+                    </ul>
+            </section>
+            
+
+        </main>
+
+        <div class="toggler">
+            <label for="side-toggle" id="ham-icon" class="hamburger"> <img src="../images/Hamburger.png" alt="hamburger-icon"> </label>
+            <input type="checkbox" name="side-toggle" id="side-toggle">           
+        </div>
+
+        <nav class="side-navbar">  
+            <ul class="side-nav">
+                <li class="nav-item"> <a href="https://drive.google.com/uc?authuser=0&id=1ewaZKPFntJNOwLHxwUyZlX_GzEEqn6cu&export=download" class="btn btn-primary">Get Cage</a> </li>
+                <li class="nav-item"> <a href="#slate">Slate</a> </li>
+                <li class="nav-item"> <a href="#">Fraction</a> </li>
+                <li class="nav-item"> <a href="#component">Components</a> </li>
+                <li class="nav-item"> <a href="#layout">Layout</a> </li>
+            </ul>
+        </nav>
+
+        <footer class="footer">
+            <p>@2019 cage.css</p>
+        </footer>
+
+    </section>
+
+    <script src="../js/alert.js"></script>
+    
+</body>
+</html>

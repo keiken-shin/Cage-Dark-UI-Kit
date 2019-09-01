@@ -1,0 +1,16 @@
+//Alert style
+
+.alert{
+    position: relative;
+    padding: 1rem ;
+    font-size: $alert-font;
+    border-radius: 10px;
+    background: transparent;
+}
+
+//Alternative colors
+@each $color, $value in $theme-colors{
+    .#{$color}-alert {
+      @include alert-style($value);
+    }
+}

@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    background: #161616;
+    color: #fff;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.btn{
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.nav-head{
+    display: flex;
+    margin: 30px 37px;
+    line-height: 37px;
+
+    .logo{
+        width: 48px;
+        height: 20px;
+    }
+    
+    .hamburger-icon{
+        width: 32px; 
+        height: 20px;
+        position: absolute;
+        right: 0;
+        margin-right: 5%; 
+        cursor: pointer;
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    visibility: hidden;
+
+    .nav-sidebar{
+        background: #1A1A1A;
+        padding: 20px;
+
+        ul{
+            list-style-type: none;
+
+            li{
+                padding: 10px;
+                border-bottom: 1px solid #2C2C2C ;
+
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.mid-element{
+    transform: translateY(50%);
+
+    .center-img{
+        width: 192px; 
+        height: 65px;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .underLogo-text{
+        letter-spacing: 5px;
+        padding: 10px 0;
+    }
+
+    .motto{
+        color: #ffffff80;
+        margin-top: 20px;
+    }
+}
+.jump-mobile{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+
+}
+
+.jump-desktop{
+    visibility: hidden;
+}
+
+.btn-design{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+
+    &:hover{
+        color: #161616;
+        box-shadow: inset 100px 0 0 0 #fff;
+        transition: all 0.5s ease;
+    }
+
+    a{
+        font-weight: 300;
+
+        &:hover{
+        color: #161616;
+        }
+    }
+}
+
+.nav-desktop{
+    visibility: hidden;
+}
+
+
+.line-art{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    
+    img{
+        width: 286px;
+        height: 127px;
+    }
+}
+
+footer{
+    font-weight: 100;
+    font-size: 10px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    span{
+        padding: 5px;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media (min-width: 600px){
+
+
+    .nav-head{
+        display: flex;
+
+        .logo{
+            position: absolute;
+            left: 5%;
+            width: 85px;
+            height: 37px;
+        }
+
+    }
+
+    .jump-mobile{
+        top: 120px;
+    }
+
+    .mid-element{
+
+        .center-img{
+            width: 220px;
+            height: 75px;
+        }
+
+        .underLogo-text{
+            font-size: 0.9rem;
+        }
+
+        .motto{
+            font-size: 0.9rem;
+        }
+
+    }
+
+    .line-art{
+        top: 100px;
+
+        img{
+            width: 380px;
+            height: 180px;
+        }
+    }
+
+}
+
+@media (min-width: 980px){
+
+    body{
+        background: url('../images/BG.png') no-repeat;
+        background-size: cover;
+    }
+    
+    .jump-mobile{
+        visibility: hidden;
+    }
+
+    .nav-head{
+
+        .hamburger-icon{
+            visibility: hidden;
+        }
+
+        .jump-desktop{
+            visibility: visible;
+            line-height: 37px;
+            position: absolute;
+            right: 0;
+            margin-right: 3rem;
+        }
+    }
+
+    .mid-element{
+        transform: translateY(15%);
+        
+        .center-img{
+            width: 260px;
+            height: 90px;
+        }
+
+        .underLogo-text{
+            font-size: 0.9rem;
+        }
+
+        .motto{
+            font-size: 0.9rem;
+        }
+
+    }
+
+    .nav-desktop{
+        visibility: visible;
+        position: absolute;
+        left: 5%;
+        z-index: 1000;
+        width: 8%;
+
+        ul{
+            list-style-type: none;
+            margin-left: 25%;
+            padding: 15px 0;
+
+            li{
+                padding: 5px 0;
+                cursor: pointer;
+
+                span{
+                    border-top: 1px solid #fff;
+                    width: 30%;
+                    position: absolute;
+                    left: 0;
+                    margin-top: 8%;
+                }
+
+                a{
+                    &:hover{
+                        font-weight: 500;
+                    }
+                }
+            }
+
+        }
+
+        .line1, .line2, .line3, .line4{
+            border-top: 1px solid #fff;
+            position: relative;
+            left: -20%;
+        }
+
+        .line1, .line3{
+            left: -40%;
+            margin-bottom: -10px;
+        }
+
+        .line-v{
+            position: absolute;
+            top: -2.2vh;
+            border-left: 1px solid #fff;
+            height: 20vh;
+        }
+
+    }
+
+    .line-art{
+        top: 40px;
+
+        img{
+            width: 840px;
+            height: 350px;
+        }
+    }
+}

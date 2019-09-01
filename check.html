@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/cage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <title>Cage.CSS</title>
+</head>
+<body>
+
+    
+    
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <a href="">Anchor</a>
+    <p>Paragraph</p>
+
+    <img src="images/1.jpg" alt="">
+
+    <ul>
+        <li>first</li>
+        <li>second</li>
+    </ul>
+
+    <ol>
+        <li>start</li>
+        <li>end</li>
+    </ol>
+
+    <mark>Mark</mark>
+    <small>Small</small>
+    <sub>Sub</sub>
+    <sup>Sup</sup>
+
+    <img src="images/logo.png" alt="logo">
+
+    <figure>
+        <figcaption>Caption</figcaption>
+    </figure>
+
+    <hr>
+
+    <kbd>Keyboard Input</kbd>
+    <samp>Output</samp>
+    <pre>
+        <code>
+            &lthr&gt;
+            &ampatt;
+        
+            .blank{
+                background: #fff;
+            }
+        </code>
+    </pre>
+    
+    <button>Button1</button>
+
+    <fieldset>
+
+        <legend>Next</legend>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    
+        <input type="checkbox" name="c1" id="">
+        <input type="radio" name="r1" id="">
+    
+        <input type="number" name="1" id="">
+        <input type="search" name="" id="">
+
+        <textarea name="" id="" cols="30" rows="2"></textarea>
+
+    </fieldset>
+    
+    <table>
+        <tr>
+            <td>Money</td>
+            <th>Money Again</th>
+        </tr>
+    </table>
+
+    <button class="btn btn-primary">first</button>
+
+    <!-- Alert test -->
+    <div class="mt-3 alert success-alert" role="alert">
+        Responsive Primary Alert
+    </div>
+
+    <div class="mt-3 alert primary-alert" role="alert">
+        Responsive Primary Alert with a <a href="void:javascript(0)" class="alert-link">Clickable Link</a>
+    </div>
+
+    <div class="alert success-alert mt-3" role="alert">
+        <h3 class="mt-0">Custom HTML Content inside the Alert Box!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr>
+        <p class="mb-0">Well Done! You have used it the right way.</p>
+    </div>
+
+    <div class="mt-3 alert primary-alert" role="alert">
+        <strong>It's a Primary Alert!</strong> Just Click the close button to close the alert box.
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="mt-3 alert secondary-alert" role="alert">
+        <strong>It's a Secondary Alert!</strong> Just Click the close button to close the alert box.
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- Alert test end -->
+
+    <!-- Cards -->
+    <div class="mt-3 col-wd-6 col-md-3">
+        <div class=" card primary-card">
+            <div>
+            <img class="card-img" src="images/LineArt.png" alt="">
+            </div>
+            <div>
+            <h5 class="card-head">Basic Card</h5>
+            <hr class="cr-hr">
+            </div>
+            <div>
+            <p class="card-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+            </div>
+            <a class="card-btn btn btn-primary" href="javascript:void(0)">Button</a>
+        </div>
+        
+    </div>
+
+    
+
+    <div class="mt-3 col-wd-6 col-md-3">
+        <div class=" card secondary-card">
+            <div>
+                <h5 class="card-head">Basic Card</h5>
+                <hr class="cr-hr">
+              </div>
+              <div>
+                <p class="card-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+              </div>
+              <a class="card-btn btn btn-secondary" href="javascript:void(0)">Button</a>
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- DropDown -->
+
+    <form class="dropdown mt-3">
+
+            <ul class="select">
+                <li>
+                    <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+                    <span class="select_label select_label-placeholder">Go Choose!</span>
+                </li>
+        
+                <li class="select_items">
+                    <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+                    <label class="select_closeLabel" for="awesomeness-close"></label>
+        
+                    <ul class="select_options">
+                        <li class="select_option">
+                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+                            <label class="select_label" for="awesomeness-ridiculous">First one</label>
+                        </li>
+        
+                        <li class="select_option">
+                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+                            <label class="select_label" for="awesomeness-reasonable">Next one</label>
+                        </li>
+        
+                        <li class="select_option">
+                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+                            <label class="select_label" for="awesomeness-lacking">Another one</label>
+                        </li>
+        
+                        <li class="select_option">
+                            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+                            <label class="select_label" for="awesomeness-awesomeless">One more</label>
+                        </li>
+                    </ul>
+        
+                    <label class="select_expandLabel" for="awesomeness-opener"></label>
+                </li>
+            </ul>
+        
+        </form>
+
+    <!-- DropDown End -->
+
+    <!-- Checkbox Design -->
+
+    <form>
+        <input type="checkbox" id="fruit1" name="fruit-1" value="Apple" checked disabled class="checkbox primary-checkbox">
+        <label for="fruit1" class="check-list">Apple</label>
+        <input type="checkbox" id="fruit2" name="fruit-2" value="Banana" class="checkbox secondary-checkbox">
+        <label for="fruit2" class="check-list">Banana</label>
+        <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry" class="checkbox success-checkbox">
+        <label for="fruit3" class="check-list">Cherry</label>
+        <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry" class="checkbox peace-checkbox">
+        <label for="fruit4" class="check-list">Strawberry</label>
+    </form>
+
+    <!-- Checkbox Design End -->
+
+        <!-- Content Accordion -->
+
+        <div class="accordion mt-3">
+
+                <div class="accordion-content">
+                    <input type="checkbox" name="que" class="accord" id="question-1">
+                    <label for="question-1" id="acc-first">1. Question</label>
+                    <section class="collapse">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                        </p>    
+                    </section>
+                </div>
+        
+                <div class="accordion-content">
+                    <input type="checkbox" name="que" class="accord" id="question-2">
+                    <label for="question-2">2. Question</label>
+                    <section class="acc-collapse">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                        </p>
+                    </section>
+                </div>
+        
+                <div class="accordion-content">
+                    <input type="checkbox" name="que" class="accord" id="question-3">
+                    <label for="question-3" id="acc-last">3. Question</label>
+                    <section class="collapse">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis maxime, nesciunt provident dignissimos omnis voluptate ratione, vel in deserunt eius temporibus. Est qui vero culpa consequatur possimus quia minus.Temporibus, culpa cum at perspiciatis pariatur dolorum iste numquam rem beatae reprehenderit libero nobis laborum! A officiis necessitatibus magnam vero, qui earum animi sit, veniam quasi, inventore quae illo odio.
+                        </p>
+                    </section>
+                </div>
+        
+            </div>
+        
+            <!-- Content Accordion End -->
+
+    <!-- Table Grid -->
+
+    <div class="grid">
+        <div class="row">
+
+            <div class="col-wd-12">
+                <div class="col">12 Columns</div>
+            </div>
+
+            <div class="col-wd-6">
+                <div class="col">6 Columns</div>
+            </div>
+            <div class="col-wd-6">
+                <div class="col">6 Columns</div>
+            </div>
+
+            <div class="col-wd-6 col-md-4">
+                <div class="col">4 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4">
+                <div class="col">4 Columns</div>
+            </div>
+            <div class="col-wd-12 col-md-4">
+                <div class="col">4 Columns</div>
+            </div>
+
+            <div class="col-wd-6 col-md-3">
+                <div class="col">3 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-3">
+                <div class="col">3 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-3">
+                <div class="col">3 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-3">
+                <div class="col">3 Columns</div>
+            </div>
+
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+            <div class="col-wd-6 col-md-4 col-sm-2">
+                <div class="col">2 Columns</div>
+            </div>
+
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+            <div class="col-wd-3 col-md-2 col-sm-1">
+                <div class="col">1</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Table Grid End -->
+
+    <!-- CSS GRID -->
+
+    <!-- Layout-1 -->
+
+    <input type="checkbox">
+
+    <div id="content-1">
+
+        <div id="grid">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <header class="cg-1-head">Header</header>
+        <main class="cg-1-main">Main</main>
+        <section class="cg-1-sect">Section</section>
+        <aside class="cg-1-aside">Aside</aside>
+        <nav class="cg-1-nav">Nav</nav>
+        <footer class="cg-1-foot">Footer</footer>
+
+    </div>
+
+    <!-- Layout 2 -->
+    <section class="mt-5">
+
+        <div id="content-2">
+            <div class="cg-2-one">1</div>
+            <div class="cg-2-two">2</div>
+            <div class="cg-2-three">3</div>
+            <div class="cg-2-four">4</div>
+            <div class="cg-2-five">5</div>
+        </div>
+
+    </section>
+
+    
+
+    <!-- CSS GRID END -->
+
+    <!-- SCRIPTS -->
+    <script src="js/alert.js"></script>
+    
+</body>
+</html>

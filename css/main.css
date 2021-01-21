@@ -29,7 +29,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 37px;
+  padding: 1em;
   line-height: 37px;
 }
 
@@ -286,8 +286,8 @@ footer span {
     top: 40px;
   }
   .line-art img {
-    width: 840px;
-    height: 350px;
+    width: 750px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
